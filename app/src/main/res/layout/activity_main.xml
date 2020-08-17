@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorback">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe Game"
+        android:textSize="45dp"
+        android:textColor="@color/colortext"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Player 1 Name: "
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colortext"
+            android:layout_marginTop="20dp"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/player1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/player1"
+            android:background="@color/colortext"/>
+
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player1_name"
+            android:text=" Enter Player 2 Name:  "
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colortext"
+            android:layout_marginTop="20dp"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/player2_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/player2"
+            android:background="@color/colortext"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text=" Lets Begin "
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/colortext" />
+
+</LinearLayout>
